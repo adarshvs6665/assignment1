@@ -1,0 +1,158 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+header nav {
+    height: 4rem;
+    background-color: white;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    border: 1px solid black;
+
+    transform: translateY(-18%);
+}
+
+.sub {
+    font-size: .6rem;
+}
+
+li {
+    position: relative;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+select {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #495057;
+    border-radius: 4px;
+    padding: 6px 12px 6px 12px;
+    color: #495057;
+
+    font-size: 0.8rem;
+}
+
+select option {
+    font-size: 0.8rem;
+}
+
+.card-body a {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.card-text {
+    font-size: 0.7rem;
+}
+
+.card-title {
+    font-family: 'Poppins';
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.form-check {
+    font-size: 0.8rem;
+}
+
+.form-group div {
+    position: relative;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+}
+
+.form-group input::placeholder {
+    font-size: 0.8rem;
+}
+
+.form-group div i {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+
+.form-label {
+    font-size: 0.8rem;
+}
+
+.form-page-title {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.home-content {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.home-left {
+    background-color: rgb(0, 136, 255);
+}
+
+.home-right img {
+    width: 100%;
+    max-height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input::placeholder {
+    font-size: 0.8rem;
+}
+
+.line {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+.login-text {
+    font-size: 0.8rem;
+}
+
+.login-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.login-page-main {
+    height: 80vh;
+}
+
+.login-page-title {
+    font-size: 2rem;
+}
+
+.logo {
+    font-family: 'Poppins';
+}
+
+.round {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(165, 165, 165);
+    border-radius: 50%;
+}
+
+#home {
+    margin-top: 4rem;
+}
