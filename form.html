@@ -152,12 +152,43 @@
                                 />
                             </div>
                             <div class="row">
+                                <div class="col-4">
+                                    <label for="country" class="form-label"
+                                        >Country</label
+                                    >
+                                </div>
+                                <div class="col-4">
+                                    <label for="state" class="form-label"
+                                        >State</label
+                                    >
+                                </div>
+                                <div class="col-4">
+                                    <label for="zip" class="form-label"
+                                        >ZIP</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="row">
                                 <div class="col-sm-4">
                                     <div class="input-group mb-3">
                                         <select
                                             class="form-select"
-                                            id="inputGroupSelect04"
-                                            aria-label="Example select with button addon"
+                                            id="country"
+                                            aria-label="Choose country"
+                                        >
+                                            <option selected>Choose...</option>
+                                            <option value="1">India</option>
+                                            <option value="2">Japan</option>
+                                            <option value="3">Mexico</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="input-group mb-3">
+                                        <select
+                                            class="form-select"
+                                            id="state"
+                                            aria-label="Choose state"
                                         >
                                             <option selected>Choose...</option>
                                             <option value="1">One</option>
@@ -167,20 +198,15 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="input-group mb-3">
-                                        <select
-                                            class="form-select"
-                                            id="inputGroupSelect04"
-                                            aria-label="Example select with button addon"
-                                        >
-                                            <option selected>Choose...</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        aria-label="ZIP"
+                                        aria-describedby="basic-addon2"
+                                        id="zip"
+                                        required
+                                    />
                                 </div>
-                                <div class="col-sm-4"></div>
                             </div>
                             <span class="line"></span>
                             <div class="form-check mt-3">
