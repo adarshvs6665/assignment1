@@ -15,8 +15,8 @@ input[type='radio'] {
     transform: translateY(-18%);
 }
 
-.sub {
-    font-size: .6rem;
+input::placeholder {
+    font-size: 0.8rem;
 }
 
 li {
@@ -108,10 +108,6 @@ select option {
     background-repeat: no-repeat;
 }
 
-input::placeholder {
-    font-size: 0.8rem;
-}
-
 .line {
     display: block;
     width: 100%;
@@ -151,6 +147,10 @@ input::placeholder {
     height: 1.5rem;
     background-color: rgb(165, 165, 165);
     border-radius: 50%;
+}
+
+.sub {
+    font-size: 0.6rem;
 }
 
 #home {
