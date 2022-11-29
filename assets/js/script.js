@@ -40,8 +40,20 @@ async function fetchData(url) {
 
 // function for logging in
 function login() {
+    let user = [];
+    let email = document.getElementById('email').value;
+    let password = document.getElementById('password').value;
+    let loginFlag = false;
+    let emailExistFlag = false;
+    let loginFail = document.getElementById('loginFail');
+    if (!(email && password)) {
+        loginFail.innerHTML = 'Enter credentials to login';
+        return;
+    }
+
     // if no users are registered ( available in session ) login can't be initiated
     if (sessionStorage.getItem('users') == null) {
+        loginFail.innerHTML = 'Not a registered user';
         return;
     }
 
@@ -51,11 +63,6 @@ function login() {
     // fetching all users
     users = JSON.parse(sessionStorage.getItem('users'));
 
-    let user = [];
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
-    let loginFlag = false;
-
     // loops through users
     for (let i = 0; i < users.length; ++i) {
         usersEmail = users[i].email;
@@ -64,7 +71,7 @@ function login() {
         if (usersEmail != email) {
             continue;
         }
-
+        emailExistFlag = true;
         // reaches this section only if an email in session matches the entered email
         usersPassword = users[i].password;
 
@@ -81,9 +88,13 @@ function login() {
         }
     }
 
+    if (!emailExistFlag) {
+        loginFail.innerHTML = 'User not registered';
+        return
+    }
     // if login form is incomplete or credentials are wrong it is displayed
     if (!loginFlag) {
-        document.getElementById('loginFail').innerHTML = 'Invalid credentials';
+        loginFail.innerHTML = 'Invalid credentials';
     }
 }
 

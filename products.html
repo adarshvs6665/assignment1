@@ -52,19 +52,17 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div
-                        class="collapse navbar-collapse justify-content-start "
+                        class="collapse navbar-collapse justify-content-start"
                         id="navbarSupportedContent"
                     >
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                
                                 <a
-                                    class="nav-link login-text "
+                                    class="nav-link login-text"
                                     href="#"
                                     tabindex="-1"
                                     aria-disabled="true"
                                     id="productsNav"
-                                    
                                     >Products</a
                                 >
                             </li>
@@ -75,13 +73,21 @@
                         id="navbarSupportedContent"
                     >
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item" id="loginNav">
-                                
+                            <li class="nav-item" id="loginNav"></li>
+                            <li class="nav-item" id="logoutNav">
+                                <span class="round"
+                                    ><i
+                                        class="fa fa-xs fa-regular fa-user login-icon"
+                                    ></i
+                                ></span>
+                                <a
+                                    class="nav-link login-text"
+                                    href="javascript:logout();"
+                                    tabindex="-1"
+                                    aria-disabled="true"
+                                    >Log Out</a
+                                >
                             </li>
-                            <li class="nav-item " id="logoutNav">
-                                <span class="round"><i class="fa fa-xs fa-regular fa-user login-icon"></i></span>
-                                <a class="nav-link login-text" href="javascript:logout();" tabindex="-1" aria-disabled="true">Log Out</a>
-                              </li> 
                         </ul>
                     </div>
                 </div>
@@ -90,7 +96,7 @@
         <section>
             <div class="container mt-5">
                 <div class="row d-flex p-3">
-                    <div class="col-6 mx-auto text-center  ">
+                    <div class="col-6 mx-auto text-center">
                         <h1>Products</h1>
                     </div>
                 </div>
@@ -98,19 +104,18 @@
                     <div class="col-12">
                         <table id="productTable" class="table bg-white shadow">
                             <thead>
-                              <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Category</th>
-                                <th scope="col">Created At</th>
-                                <th scope="col">Product Id</th>
-                              </tr>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Category</th>
+                                    <th scope="col">Created At</th>
+                                    <th scope="col">Product Id</th>
+                                </tr>
                             </thead>
-                            <tbody>
-                            </tbody>
-                          </table>
+                            <tbody></tbody>
+                        </table>
                     </div>
                 </div>
             </div>
