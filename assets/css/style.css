@@ -3,6 +3,13 @@ body {
     font-family: 'Poppins';
 }
 
+form[name='loginForm'] input {
+    font-size: 0.8rem;
+}
+form[name='signupForm'] input {
+    font-size: 0.8rem;
+}
+
 header nav {
     height: 4rem;
     background-color: white;
@@ -59,6 +66,17 @@ select option {
     font-weight: bolder;
 }
 
+.card-upper-title {
+    justify-content: center;
+    align-items: center;
+}
+
+.required::after {
+    content: '*';
+    margin-left: 2px;
+    color: red;
+}
+
 .form-check {
     font-size: 0.8rem;
 }
@@ -109,14 +127,34 @@ select option {
     background-repeat: no-repeat;
 }
 
+.invalid {
+    color: red;
+    font-size: 0.6rem;
+}
+
+.invalid::after {
+    content: '*';
+    color: red;
+}
+
 .line {
     display: block;
     width: 100%;
     border-bottom: 1px solid grey;
 }
 
+.login-btn {
+    width: 100%;
+    margin-top: 1.6rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
 .login-text {
     font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .login-icon {
@@ -150,10 +188,39 @@ select option {
     border-radius: 50%;
 }
 
+.signup-btn {
+    width: 100%;
+    margin-top: 1.6rem;
+    font-size: 0.8rem;
+    color: white;
+}
+
 .sub {
     font-size: 0.6rem;
 }
 
+.test {
+    display: flex;
+}
+
 #home {
     margin-top: 4rem;
+}
+
+#productTable tr:nth-child(odd) {
+    background-color: rgb(0, 0, 0, 0.05);
+}
+
+#productTable th {
+    font-weight: 900;
+}
+
+#loginFail::after {
+    content: '';
+}
+
+#productTable th,
+td {
+    font-size: 0.8rem;
+    vertical-align: middle;
 }
