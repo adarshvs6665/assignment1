@@ -88,11 +88,14 @@ function login() {
         }
     }
 
+    // emailExistFlag becomes true only when the email entered by user exists in the session variable 'users'
+    // if it's false, user is not registered
     if (!emailExistFlag) {
         loginFail.innerHTML = 'User not registered';
-        return
+        return;
     }
-    // if login form is incomplete or credentials are wrong it is displayed
+    // login flag remains false until entered password matches the one in the session for the corresponding email
+    // if login credentials are wrong it is displayed
     if (!loginFlag) {
         loginFail.innerHTML = 'Invalid credentials';
     }
